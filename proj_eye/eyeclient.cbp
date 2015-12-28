@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="eyeclient" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/eyeclient" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="/usr/users/promo2013/ran_she/project/coredata/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-lboost_thread-mt" />
+					<Add library="X11" />
+					<Add library="/usr/users/promo2013/ran_she/project/workspace/eyeclient/libmouselib.a" />
+					<Add library="/usr/users/promo2013/ran_she/project/coredata/libshared/linux32_ia32sse2/libsm_cd_coredata.so" />
+					<Add library="/usr/users/promo2013/ran_she/project/coredata/libshared/linux32_ia32sse2/libsm_cd_coredata_d.so" />
+					<Add library="/usr/users/promo2013/ran_she/project/coredata/libstatic/linux32_ia32sse2/libsm_cd_coredata.a" />
+					<Add library="/usr/users/promo2013/ran_she/project/coredata/libstatic/linux32_ia32sse2/libsm_cd_coredata_d.a" />
+					<Add directory="/usr/users/promo2013/ran_she/project/coredata/libshared/linux32_ia32sse2" />
+					<Add directory="/usr/users/promo2013/ran_she/project/coredata/libstatic/linux32_ia32sse2" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/eyeclient" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="include/EyeClient.h" />
+		<Unit filename="include/Mouse.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/EyeClient.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
